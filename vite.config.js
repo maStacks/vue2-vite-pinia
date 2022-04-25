@@ -5,6 +5,7 @@ import { createSvgIconsPlugin } from "vite-plugin-svg-icons";
 import path from "path"; // ts如果报错 npm i @types/node -D
 import compressPlugin from "vite-plugin-compression"; //静态资源压缩
 // import legacyPlugin from '@vitejs/plugin-legacy'; //浏览器兼容
+import visualizer from 'rollup-plugin-visualizer'
 
 export default defineConfig({
   // base: '/aaa',
@@ -27,6 +28,7 @@ export default defineConfig({
   plugins: [
     createVuePlugin(),
     vueJsx({}),
+    visualizer(),
     compressPlugin({
       //gzip静态资源压缩
       verbose: true, // 默认即可
