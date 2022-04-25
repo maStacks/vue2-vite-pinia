@@ -11,7 +11,7 @@ import {user} from "@/store/modules/user";
 export default {
   name: 'Dashboard',
   computed: {
-    ...mapState(user, ['name','qwe'])
+    ...mapState(user, ['name'])
   },
   created(){
     

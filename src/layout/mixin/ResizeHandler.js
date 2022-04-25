@@ -7,7 +7,7 @@ const WIDTH = 992 // refer to Bootstrap's responsive design
 
 export default {
   computed: {
-    ...mapState(app, ['sidebar','device','closeSideBar'])
+    ...mapState(app, ['sidebar','device','closeSideBar','toggleDevice'])
   },
   watch: {
     $route(route) {
